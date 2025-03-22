@@ -1,6 +1,14 @@
 # Netflix Gpt
 - Create react app through parcel
 - Configured Tailwindcss
+- Header
+- Routing
+- Login Form
+- Sign up Form
+- Form Validation
+- useRef Hook
+- Firebase Setup
+- Deploying our app to production
 
 # Features
 - Login/Sign up
