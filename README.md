@@ -9,7 +9,21 @@
 - useRef Hook
 - Firebase Setup
 - Deploying our app to production
-
+- BugFix: If user is not logged in Redirect to / page
+- BugFix: If user is logged in redirect to /browse page
+- Unsubscribe to onAuthStateChanged callback
+- Add hardcoded values in constant file
+- Register TMDB API & create an api and get access token
+- Get Data from Tbdb now playing movies list Api
+- Custom Hooks for now playing movies
+- Create movieSlice
+- Updating Store with movie Data
+- Planing main and Secondary container
+- Fetch Data for trailer video
+- update store with trailer video data
+- Embed the Youtube and make it mute and autoplay
+- Applied Tailwind classes
+ 
 # Features
 - Login/Sign up
     - SignIn/Sign Up

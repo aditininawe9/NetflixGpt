@@ -7,15 +7,13 @@ import {
   updateProfile,
 } from "firebase/auth";
 import { auth } from "../utils/firebase";
-import { useNavigate } from "react-router";
 import { useDispatch } from "react-redux";
 import { addUser } from "../utils/userSlice";
-
+import {LOGO} from "../utils/constant"
 
 const Login = () => {
   const [isSignIn, setIsSignIn] = useState(true);
   const [errorMessage, setErrorMessage] = useState(null);
-  const navigate = useNavigate();
   const dispatch = useDispatch();
 
   const name = useRef(null);
@@ -32,7 +30,6 @@ const Login = () => {
       password.current.value
     );
     setErrorMessage(message);
-    console.log("message ====>>", message);
     if (message) return;
 
     if (!isSignIn) {
@@ -50,7 +47,6 @@ const Login = () => {
             .then(() => { 
               const { uid, email, displayName } = auth.currentUser;
               dispatch(addUser({ uid: uid, email: email, displayName: displayName }));
-              navigate("/browse");
             })
             .catch((error) => {
               setErrorMessage(error);
@@ -71,9 +67,6 @@ const Login = () => {
         .then((userCredential) => {
           // Signed in
           const user = userCredential.user;
-          console.log(user);
-          navigate("/browse");
-          // ...
         })
         .catch((error) => {
           const errorCode = error.code;
@@ -88,7 +81,7 @@ const Login = () => {
       <Header />
       <div className="absolute">
         <img
-          src="https://assets.nflxext.com/ffe/siteui/vlv3/f6e7f6df-6973-46ef-b98f-12560d2b3c69/web/IN-en-20250317-TRIFECTA-perspective_26f87873-6014-460d-a6fb-1d96d85ffe5f_large.jpg"
+          src={LOGO}
           alt="logo"
         />
       </div>
