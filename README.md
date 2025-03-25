@@ -35,6 +35,3 @@
         - Title $ description
         - Movie Suggesstions
             - Movie List * N
-- Netflix GPT
-    - Search Bar
-    - Movie Suggesstions
