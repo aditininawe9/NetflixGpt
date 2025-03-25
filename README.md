@@ -1,4 +1,6 @@
 # Netflix Gpt
+ Live Demo: [Click Here]([https://your-project-name.web.app](https://netflixgpt-5039d.web.app/)
+ This is a React.js project hosted on Firebase.
 - Create react app through parcel
 - Configured Tailwindcss
 - Header
