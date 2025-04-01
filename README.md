@@ -23,6 +23,9 @@
 - update store with trailer video data
 - Embed the Youtube and make it mute and autoplay
 - Applied Tailwind classes
+- GPT Search Feature
+- Multilingual page
+- GPT Api's
  
 # Features
 - Login/Sign up
